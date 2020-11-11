@@ -1,23 +1,32 @@
 ## Booj Book Task Information
 
-		Compose a site using the Laravel or Vue framework that allows the user to create a list of books they would like to read. 
+    Compose a site using the Laravel or Vue framework that allows the user to create a list 
+    of books they would like to read. 
 
-		
-		Users should be able to perform the following actions:
 
-			- Connect to a publically available API
+    Users should be able to perform the following actions:
 
-			- Create Postman collection and Vue app OR Laravel App
+        - Connect to a publically available API
 
-			- Add or remove items from the list
+        - Create Postman collection and Vue app OR Laravel App
 
-			- Change the order of the items in the list
+        - Add or remove items from the list
 
-			- Sort the list of items
+        - Change the order of the items in the list
 
-			- Display a detail page with at least 3 points of data to display
+        - Sort the list of items
 
-			- Include unit tests
+        - Display a detail page with at least 3 points of data to display
+
+        - Include unit tests
+
+
+## Live Demo
+
+You can view the application as it is at [https://boojbooks.yorda.dev](https://boojbooks.yorda.dev).
+
+    e-mail: test@user.com
+    password: password
 
 
 ## Installing
