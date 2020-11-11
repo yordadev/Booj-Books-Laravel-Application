@@ -40,12 +40,12 @@ class HomeController extends Controller
      */
     public function renderHome(Request $request)
     {
-        $collections = Collection::where('user_id', Auth::user()->id)->get();
-        $googleBooks = Http::get('https://www.googleapis.com/books/v1/volumes?q=' . $this->query . '&key=' . config('services.google.key'));
-
         if (isset($request->all()['query'])) {
             $this->query = $request->all()['query'];
         }
+
+        $collections = Collection::where('user_id', Auth::user()->id)->get();
+        $googleBooks = Http::get('https://www.googleapis.com/books/v1/volumes?q=' . $this->query . '&key=' . config('services.google.key'));
 
         foreach ($googleBooks['items'] as $book) {
             $this->bookAuthors = collect([]); //reset it every book
